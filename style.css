@@ -1,0 +1,74 @@
+
+*{
+  padding:0px;
+  margin:0px;
+  font-family:arial;
+}
+body{
+  background:url("https://i.pinimg.com/originals/ac/4a/75/ac4a75f2c61f41ca3ab8acd208f2107d.jpg")
+}
+
+.btn-menu{
+  top: 0px;
+  display:grid;
+  grid-template-rows:1fr 1fr 1fr;
+  width:40px;
+  height:40px;
+  float:top;
+}
+.barra1{
+  text-align:center;
+  margin:auto;
+  width:25px;
+  height:5px;
+  background-color:black;
+  border-radius:50px 50px 50px 50px;
+}
+.barra2{
+margin:auto;
+  width:25px;
+  height:5px;
+  background-color:black;
+  border-radius:50px 50px 50px 50px;
+}
+.barra3{
+  margin:auto;
+  width:25px;
+  height:5px;
+  background-color:black;
+  border-radius:50px 50px 50px 50px;
+}
+
+.botoes{
+  position:absolute;
+  margin-top:0px;
+  width:150px;
+  left:-150px;
+  height:400px;
+  display:grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  background-color:rgba(29, 25, 25, 0.239);
+  transition:all .5s;
+}
+a{
+  margin:auto;
+  text-decoration:none;
+  color:black;
+  display:block;
+
+}
+a:hover{
+  display:block;
+}
+
+input[type="checkbox"]{
+  display:none;
+}
+input[type="checkbox"]:checked ~ .botoes {
+  transform:translateX(150px);
+}
+
+label{
+  position:absolute;
+  z-index:1;
+}
